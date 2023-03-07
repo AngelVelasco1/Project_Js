@@ -43,9 +43,12 @@ function tradicional (){
     }
     else if (nota_user == 0){
     alert("Tu calificación es: "`${notes[5].letter}`);
-    alert("Intente de nuevo con ENTER");
-        repeat();
-    }
+        
+    else { 
+            alert("Intente de nuevo con ENTER");
+            repeat();
+      }
+
 }
 
 function range(){
@@ -67,9 +70,12 @@ function range(){
     else if (nota_user == 0){
     alert(`Tu calificación es: ${notes[5].letter}`);
     }
-   alert("Intente de nuevo con ENTER");
-        repeat();
-    }
+      else { 
+            alert("Intente de nuevo con ENTER");
+            repeat();
+      }
+
+  
 }
 
 function sbg (){
