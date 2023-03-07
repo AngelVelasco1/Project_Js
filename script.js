@@ -1,5 +1,5 @@
-
-const notes = [
+function repeat(); {
+    const notes = [
     {tradicional: "90-100", range: "12-14", letter: "A", rating: "4", message: "Exelent"},
     {tradicional: "80-89", range: "9-11", letter: "B", rating: "3", message: "Demostrate"},
     {tradicional: "70-79", range: "6-8", letter: "C", rating: "2", message: "Aprochaes"},
@@ -43,8 +43,9 @@ function tradicional (){
     }
     else if (nota_user == 0){
     alert("Tu calificación es: "`${notes[5].letter}`);
+    alert("Intente de nuevo con ENTER");
+        repeat();
     }
-    else ("Ingrese una nota válida: ")
 }
 
 function range(){
@@ -66,7 +67,9 @@ function range(){
     else if (nota_user == 0){
     alert(`Tu calificación es: ${notes[5].letter}`);
     }
-    else ("Ingrese una nota válida")
+   alert("Intente de nuevo con ENTER");
+        repeat();
+    }
 }
 
 function sbg (){
@@ -85,5 +88,9 @@ function sbg (){
     else if (nota_user === "0"){
     alert(`Tu calificación es: ${notes[4].letter}`);
     }
-    else ("Ingrese una nota válida: ")
+    else {
+    alert("Intente de nuevo con ENTER");
+        repeat();
+    }
+}
 }
